@@ -7,59 +7,61 @@ AeroGap is a data-driven intelligence tool designed to identify underserved flig
 ## Features:
 
 ```text
-- Automated Data Pipeline: CLI tool to manage a tracking list of YouTube creators without repeated manual URL entry.
+- Live Market Intelligence: Pivots from restricted historical analytics to live "Shopping" data for 2026 travel trends.
 
-- Daily Snapshots: Captures historical views, likes, comments, and subscriber counts to visualize trends over time.
+- Intelligent City Search: Integrated IATA lookup to resolve city names (e.g., "Bengaluru") into 3-letter codes (e.g., "BLR").
 
-- CRUD Functionality: Interactive menu to Add new channels, Refresh existing data, or Delete creators from the tracking list.
+- Multi-Route Comparison: Automated fetching of flight offers across multiple global destinations from a single origin.
 
-- Relational Database: Structured SQLite storage using normalized tables for Channels, Videos, and daily Video Statistics.
+- Comprehensive Data Capture: Extracts grand total prices, seat availability, airline carriers, and duration for deep analysis.
 
-- Dynamic Dashboard: Professional Power BI report linked to SQL with automated refresh for real-time channel growth analysis.
+- Aviation "Gap" Formula: Framework to identify underserved routes by calculating the Route Feasibility Index (RFI).
 ```
 
 ## Tech Stack:
 
 ```text
 Language: Python 3.x
-API: YouTube Data API v3
-Database: SQLite
-Visualization: Power BI Desktop
-Libraries: requests, sqlite3, python-dotenv
+API: Amadeus for Developers (Flight Offers Search)
+Libraries: pandas, amadeus, python-dotenv
+Environment: Virtual Environment (venv)
+Visualization: Jupyter Notebooks (Matplotlib/Seaborn)
 ```
 
 ## Project Structure: 
 
 ```text
-youtube-analytics/
-│── fetch_youtube_data.py       # Main Python logic & CLI menu
-│── database.db                 # SQLite database (stores historical stats)
-│── .env                        # YouTube API Key (not committed)
-│── .gitignore                  # Prevents DB and env files from being pushed
-│── requirements.txt            # Python dependencies
-└── YouTube_Dashboard.pbix      # Power BI dashboard file
+aero-analysis/
+├── scripts/            # Python logic for data collection (fetch_traffic.py)
+├── data/               # CSV storage for live market prices and seat counts
+├── notebooks/          # Jupyter Notebooks for RFI calculations & charts
+├── venv/               # Virtual environment for local dependency management
+├── .env                # Amadeus API Key & Secret (not committed)
+├── .gitignore          # Prevents venv, .env, and large data from being pushed
+└── requirements.txt    # Python dependencies (amadeus, pandas, etc.)
 ```
 
 ## Setup & Installation: 
 ```text
 1. Clone the Repo:
-  git clone https://github.com/manasag1605/youtube-analytics.git
+  git clone https://github.com/yourusername/aero-analysis.git
 
 2. Install Requirements:
-  pip install requests python-dotenv
+  pip install amadeus pandas python-dotenv
 
-3. Configure API Key: Creat a .env file and add your key:  
-  YOUTUBE_API_KEY=your_api_key_here
+3. Configure API Keys: Create a .env file and add your credentials:
+  AMADEUS_KEY=your_api_key_here
+  AMADEUS_SECRET=your_api_secret_here
 
 4. Run the app:
-  python fetch_youtube_data.py
+  python scripts/fetch_traffic.py
 ```
 
-## Dashboard Insights:
+## Analysis Insights:
 ```text
-The Power BI dashboard provides a "YouTube Studio" style experience:
-KPI Cards: Total Subscribers, Total Views, Total Videos, and Engagement Rate.
-Growth Trend: A line chart showing view count accumulation over time.
-Content Leaderboard: A detailed table of videos ranked by viewership and engagement.
+The AeroGap framework identifies profitable route opportunities using live data:
+Supply vs. Demand: Visualizing flight price density against seat availability.
+RFI Score: Ranking destinations by a custom index where high prices + low seats = market gap.
+Strategic Recommendations: Data-backed evidence for opening new direct flight paths from Bengaluru.
 ```
 
