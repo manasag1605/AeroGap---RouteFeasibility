@@ -1,11 +1,7 @@
-# YouTube Analytics Tracker
+# AeroGap: Aviation Supply-Demand Analysis
 
 ```text
-An automated data pipeline that scrapes YouTube creator data using the YouTube Data API v3, stores daily snapshots in a SQLite database, and visualizes channel growth in Power BI.
-- Includes three modes of interaction:
-- Automatic Database Refresh (Daily Tracking)
-- New Channel Discovery & Management
-- Channel Deletion & Database Cleanup
+AeroGap is a data-driven intelligence tool designed to identify underserved flight routes. By analyzing live market pricing and flight availability from the Amadeus API, this project identifies "gaps" where high traveler demand meets low flight supply, suggesting potentially profitable new routes for airlines.
 ```
 
 ## Features:
