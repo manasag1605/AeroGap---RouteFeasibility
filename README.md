@@ -9,7 +9,7 @@ AeroGap is a data-driven intelligence tool designed to identify underserved flig
 ```text
 - Live Market Intelligence: Pivots from restricted historical analytics to live "Shopping" data for 2026 travel trends.
 
-- Intelligent City Search: Integrated IATA lookup to resolve city names (e.g., "Bengaluru") into 3-letter codes (e.g., "BLR").
+- Intelligent City Search: Integrated IATA lookup to resolve city names (e.g., "London") into 3-letter codes (e.g., "LON").
 
 - Multi-Route Comparison: Automated fetching of flight offers across multiple global destinations from a single origin.
 
