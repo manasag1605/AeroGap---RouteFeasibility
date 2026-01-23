@@ -21,7 +21,7 @@ AeroGap is a data-driven intelligence tool designed to identify underserved flig
 ## Tech Stack:
 
 ```text
-Language: Python 3.x
+Language: Python 
 API: Amadeus for Developers (Flight Offers Search)
 Libraries: pandas, amadeus, python-dotenv
 Environment: Virtual Environment (venv)
@@ -51,7 +51,7 @@ aero-analysis/
 
 3. Configure API Keys: Create a .env file and add your credentials:
   AMADEUS_KEY=your_api_key_here
-  AMADEUS_SECRET=your_api_secret_here
+  AMADEUS_SECRET=api_secret_here
 
 4. Run the app:
   python scripts/fetch_traffic.py
