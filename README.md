@@ -1,7 +1,8 @@
 # AeroGap: Aviation Supply-Demand Analysis
 
 ```text
-AeroGap is a data-driven intelligence tool designed to identify underserved flight routes. By analyzing live market pricing and flight availability from the Amadeus API, this project identifies "gaps" where high traveler demand meets low flight supply, suggesting potentially profitable new routes for airlines.
+AeroGap is a data-driven intelligence tool designed to identify underserved flight routes.
+By analyzing live market pricing and flight availability from the Amadeus API, this project identifies "gaps" where high traveler demand meets low flight supply, suggesting potentially profitable new routes for airlines.
 ```
 
 ## Features:
