@@ -64,8 +64,8 @@ def parse_to_csv(raw_data, origin, dest):
 
 if __name__ == "__main__":
     # Get user inputs
-    origin_city = input("Enter Origin City (e.g., Bangalore): ")
-    dest_city = input("Enter Destination City (e.g., London): ")
+    origin_city = input("Enter Origin City: ")
+    dest_city = input("Enter Destination City: ")
 
     # Step 1: Resolve IATA codes
     origin_iata = get_iata_code(origin_city)
