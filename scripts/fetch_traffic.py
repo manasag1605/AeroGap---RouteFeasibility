@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 from dotenv import load_dotenv
-from amadeus import Client, ResponseError
+from amadeus import Client, ResponseError 
 
 load_dotenv()
 
@@ -64,7 +64,7 @@ def parse_to_csv(raw_data, origin, dest):
 
 if __name__ == "__main__":
     # Get user inputs
-    origin_city = input("Enter Origin City: ")
+    origin_city = input("Enter Origin City: ")                                     
     dest_city = input("Enter Destination City: ")
 
     # Step 1: Resolve IATA codes
