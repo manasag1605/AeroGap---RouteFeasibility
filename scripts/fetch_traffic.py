@@ -3,8 +3,8 @@ import pandas as pd
 from dotenv import load_dotenv
 from amadeus import Client, ResponseError 
 
-load_dotenv()
-
+load_dotenv() 
+ 
 amadeus = Client(
     client_id=os.getenv('AMADEUS_KEY'),
     client_secret=os.getenv('AMADEUS_SECRET')
@@ -15,7 +15,7 @@ def get_iata_code(city_name):
         response = amadeus.reference_data.locations.get(
             keyword=city_name,
             subType='CITY'
-        )
+        )  
         if response.data:
             code = response.data[0]['iataCode']
             print(f"IATA: Found {code} for {city_name}")
